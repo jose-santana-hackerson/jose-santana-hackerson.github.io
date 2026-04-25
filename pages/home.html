@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Mi Proyecto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/internas.css">
+</head>
+<body>
+    <nav class="nav-internal">
+        <a href="home.html">Inicio</a>
+        <a href="about-me.html">Sobre mí</a>
+        <a href="projects.html">Proyectos</a>
+        <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </nav>
+
+    <header class="banner">
+        <h1>Bienvenido al Panel de Control</h1>
+        <p>Has ingresado exitosamente al sistema simulado.</p>
+    </header>
+
+    <main style="padding: 40px; text-align: center;">
+        <h2>Explora tus recursos</h2>
+        <p>Utiliza el menú superior para navegar.</p>
+    </main>
+
+    <script src="../app.js"></script>
+    <script>
+        if (localStorage.getItem("sesionIniciada") !== "true") {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

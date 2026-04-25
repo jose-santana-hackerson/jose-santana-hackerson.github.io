@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!---->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mi Proyecto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div>
+        
+    </div>
+    <div class="main-wrapper">
+        <!--CONTENEDOR DEL FORMULARIO PARTE IZQUIERDA-->
+        <div class="login-side">
+            <div class="login-container">
+                <h2>Melnotte's System</h2>
+                <p>Inicia sesión para acceder al portafolio</p>
+
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                </div>
+                
+                <button onclick="login()">Entrar</button>
+                <p id="mensaje" class="error-msg"></p>
+            </div>
+        </div>
+        
+        <!--CONTENEDOR DE LA IMAGEN PARTE DERECHA-->
+        <div class="image-side">
+             <img src="img/pantano.png">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

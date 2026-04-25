@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyectos - Mi Proyecto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/internas.css">
+</head>
+<body>
+    <nav class="nav-internal">
+        <a href="home.html">Inicio</a>
+        <a href="about-me.html">Sobre mí</a>
+        <a href="projects.html">Proyectos</a>
+        <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </nav>
+
+    <main class="content-section">
+        <h1>Mis Proyectos</h1>
+        <div class="project-grid">
+            <div class="card">
+                <img src="../img/proyecto1.jpg" alt="Sistema de Inventario">
+                <h3>Sistema de Inventario</h3>
+                <p>Una aplicación web creada con HTML5 y CSS Grid.</p>
+            </div>
+
+            <div class="card">
+                <img src="../img/proyecto2.jpg" alt="Landing Page Educativa" style="filter: hue-rotate(45deg);">
+                <h3>Landing Page Educativa</h3>
+                <p>Diseño responsivo enfocado en la experiencia de usuario.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+    <script>
+        if (localStorage.getItem("sesionIniciada") !== "true") {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>

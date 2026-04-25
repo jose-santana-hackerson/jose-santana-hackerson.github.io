@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mí - Mi Proyecto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/internas.css">
+</head>
+<body>
+    <nav class="nav-internal">
+        <a href="home.html">Inicio</a>
+        <a href="about-me.html">Sobre mí</a>
+        <a href="projects.html">Proyectos</a>
+        <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </nav>
+
+    <main class="content-section">
+        <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <img src="../img/tu-foto.jpg" alt="Foto de perfil" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary);">
+            <div style="flex: 1; min-width: 300px;">
+                <h1>Sobre Mí</h1>
+                <p>¡Hola! Soy un estudiante de desarrollo web aprendiendo las bases de HTML, CSS y JavaScript.</p>
+                <p>En este proyecto estoy practicando cómo organizar archivos y manejar sesiones de usuario.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+    <script>
+        if (localStorage.getItem("sesionIniciada") !== "true") {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+</html>
